@@ -5,7 +5,7 @@ FROM registry.access.redhat.com/ubi9/httpd-24
 LABEL maintainer="belznotbells"
 LABEL description="OpenShift-ready Apache HTTPD container"
 
-# ADD index.html /var/www/html/index.html
+ADD index.html /var/www/html/index.html
 
 # Run Apache in the foreground
 CMD run-httpd
